@@ -2,20 +2,22 @@
 // uses and displays a variable
 
 #include <iostream>
+// 简单的cout使用
 
 int main()
 {
     using namespace std;
-    
-    int carrots;            // declare an integer variable
-    
-    carrots = 25;            // assign a value to the variable
+
+    int carrots; // declare an integer variable
+
+    carrots = 25; // assign a value to the variable
     cout << "I have ";
-    cout << carrots;        // display the value of the variable
+    cout << carrots; // display the value of the variable
     cout << " carrots.";
     cout << endl;
-    carrots = carrots - 1;  // modify the variable
+    carrots = carrots - 1; // modify the variable
     cout << "Crunch, crunch. Now I have " << carrots << " carrots." << endl;
     // cin.get();
-	return 0;
+    system("pause");
+    return 0;
 }
