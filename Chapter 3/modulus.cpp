@@ -8,11 +8,12 @@ int main()
 
     cout << "Enter your weight in pounds: ";
     cin >> lbs;
-    int stone = lbs / Lbs_per_stn;      // whole stone
-    int pounds = lbs % Lbs_per_stn;     // remainder in pounds
+    int stone = lbs / Lbs_per_stn;  // whole stone
+    int pounds = lbs % Lbs_per_stn; // remainder in pounds
     cout << lbs << " pounds are " << stone
          << " stone, " << pounds << " pound(s).\n";
     // cin.get();
     // cin.get();
-    return 0; 
+    system("pause");
+    return 0;
 }

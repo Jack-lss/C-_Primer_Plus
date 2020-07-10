@@ -9,5 +9,6 @@ int main()
     cout << "a = " << a << endl;
     cout << "b - a = " << b - a << endl;
     // cin.get();
-    return 0; 
+    system("pause");
+    return 0;
 }

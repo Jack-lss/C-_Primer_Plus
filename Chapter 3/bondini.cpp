@@ -11,5 +11,6 @@ int main()
     cout << "\aCode verified! Proceed with Plan Z3!\n";
     // cin.get();
     // cin.get();
-    return 0; 
+    system("pause");
+    return 0;
 }

@@ -11,5 +11,6 @@ int main()
     cout << "guess = " << guess << endl;
     cout << "debt = " << debt << endl;
     // cin.get();
+    system("pause");
     return 0;
 }
