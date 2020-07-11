@@ -6,7 +6,7 @@ int main()
     cout << "What year was your house built?\n";
     int year;
     cin >> year;
-    // cin.get();
+    cin.get();
     cout << "What is its street address?\n";
     char address[80];
     cin.getline(address, 80);
@@ -14,5 +14,6 @@ int main()
     cout << "Address: " << address << endl;
     cout << "Done!\n";
     // cin.get();
-    return 0; 
+    system("pause");
+    return 0;
 }

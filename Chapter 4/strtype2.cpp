@@ -1,6 +1,6 @@
-// strtype2.cpp –- assigning, adding, and appending
+// strtype2.cpp ï¿½- assigning, adding, and appending
 #include <iostream>
-#include <string>               // make string class available
+#include <string> // make string class available
 int main()
 {
     using namespace std;
@@ -19,10 +19,11 @@ int main()
     cout << "s3: " << s3 << endl;
     cout << "You can append strings.\n";
     s1 += s2;
-    cout <<"s1 += s2 yields s1 = " << s1 << endl;
+    cout << "s1 += s2 yields s1 = " << s1 << endl;
     s2 += " for a day";
-    cout <<"s2 += \" for a day\" yields s2 = " << s2 << endl;
+    cout << "s2 += \" for a day\" yields s2 = " << s2 << endl;
 
     //cin.get();
-    return 0; 
+    system("pause");
+    return 0;
 }
