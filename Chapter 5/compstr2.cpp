@@ -1,6 +1,6 @@
 // compstr2.cpp -- comparing strings using arrays
 #include <iostream>
-#include <string>     // string class
+#include <string> // string class
 int main()
 {
     using namespace std;
@@ -13,5 +13,6 @@ int main()
     }
     cout << "After loop ends, word is " << word << endl;
     // cin.get();
-    return 0; 
+    system("pause");
+    return 0;
 }

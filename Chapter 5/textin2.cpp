@@ -7,17 +7,19 @@ int main()
     int count = 0;
 
     cout << "Enter characters; enter # to quit:\n";
-    cin.get(ch);        // use the cin.get(ch) function
+    cin.get(ch); // use the cin.get(ch) function
     while (ch != '#')
     {
         cout << ch;
         ++count;
-        cin.get(ch);    // use it again
+        cin.get(ch); // use it again
     }
-    cout << endl << count << " characters read\n";
-// get rid of rest of line
+    cout << endl
+         << count << " characters read\n";
+    // get rid of rest of line
     // while (cin.get() != '\n')
     //    ;
     //cin.get();
-    return 0; 
+    system("pause");
+    return 0;
 }

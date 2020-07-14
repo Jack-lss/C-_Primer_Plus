@@ -7,10 +7,11 @@ int main()
     int limit;
     cin >> limit;
     int i;
-    for (i = limit; i; i--)     // quits when i is 0
+    for (i = limit; i; i--) // quits when i is 0
         cout << "i = " << i << "\n";
     cout << "Done now that i = " << i << "\n";
     // cin.get();
     // cin.get();
+    system("pause");
     return 0;
 }

@@ -2,9 +2,10 @@
 #include <iostream>
 int main()
 {
-	using std::cout;    // a using declaration
     using std::cin;
-    using std::endl;;
+    using std::cout; // a using declaration
+    using std::endl;
+    ;
     cout << "Enter an integer: ";
     int by;
     cin >> by;
@@ -13,5 +14,6 @@ int main()
         cout << i << endl;
     // cin.get();
     // cin.get();
+    system("pause");
     return 0;
 }

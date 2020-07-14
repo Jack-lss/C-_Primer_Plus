@@ -9,10 +9,11 @@ int main()
     cout << "my favorite number\n";
     do
     {
-        cin >> n;       // execute body
-    } while (n != 7);   // then test
-    cout << "Yes, 7 is my favorite.\n" ;
+        cin >> n;     // execute body
+    } while (n != 7); // then test
+    cout << "Yes, 7 is my favorite.\n";
     // cin.get();
     // cin.get();
-    return 0; 
+    system("pause");
+    return 0;
 }
