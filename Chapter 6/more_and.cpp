@@ -1,12 +1,11 @@
 // more_and.cpp -- using the logical AND operator
 #include <iostream>
-const char * qualify[4] =       // an array of pointers*/
-{                               // to strings
-    "10,000-meter race.\n",
-    "mud tug-of-war.\n",
-    "masters canoe jousting.\n",
-    "pie-throwing festival.\n"
-};
+const char *qualify[4] = // an array of pointers*/
+    {                    // to strings
+        "10,000-meter race.\n",
+        "mud tug-of-war.\n",
+        "masters canoe jousting.\n",
+        "pie-throwing festival.\n"};
 int main()
 {
     using namespace std;
@@ -24,8 +23,9 @@ int main()
     else
         index = 3;
 
-    cout << "You qualify for the " << qualify[index]; 
+    cout << "You qualify for the " << qualify[index];
     // cin.get();
     // cin.get();
+    system("pause");
     return 0;
 }

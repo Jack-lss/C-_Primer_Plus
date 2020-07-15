@@ -20,5 +20,6 @@ int main()
     } while (n != Fave);
     // cin.get();
     // cin.get();
+    system("pause");
     return 0;
 }

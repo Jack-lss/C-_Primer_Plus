@@ -1,7 +1,7 @@
 // not.cpp -- using the not operator
 #include <iostream>
 #include <climits>
-bool is_int(double); 
+bool is_int(double);
 int main()
 {
     using namespace std;
@@ -9,22 +9,23 @@ int main()
 
     cout << "Yo, dude! Enter an integer value: ";
     cin >> num;
-    while (!is_int(num))    // continue while num is not int-able
+    while (!is_int(num)) // continue while num is not int-able
     {
         cout << "Out of range -- please try again: ";
         cin >> num;
     }
-    int val = int (num);    // type cast
+    int val = int(num); // type cast
     cout << "You've entered the integer " << val << "\nBye\n";
     // cin.get();
     // cin.get();
+    system("pause");
     return 0;
 }
 
 bool is_int(double x)
 {
-    if (x <= INT_MAX && x >= INT_MIN)   // use climits values
+    if (x <= INT_MAX && x >= INT_MIN) // use climits values
         return true;
     else
-        return false; 
+        return false;
 }

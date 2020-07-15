@@ -7,7 +7,8 @@ int main()
     float naaq[ArSize];
     cout << "Enter the NAAQs (New Age Awareness Quotients) "
          << "of\nyour neighbors. Program terminates "
-         << "when you make\n" << ArSize << " entries "
+         << "when you make\n"
+         << ArSize << " entries "
          << "or enter a negative value.\n";
 
     int i = 0;
@@ -18,10 +19,10 @@ int main()
     {
         naaq[i] = temp;
         ++i;
-        if (i < ArSize)             // room left in the array,
+        if (i < ArSize) // room left in the array,
         {
             cout << "Next value: ";
-            cin >> temp;            // so get next value
+            cin >> temp; // so get next value
         }
     }
     if (i == 0)
@@ -41,5 +42,6 @@ int main()
     }
     // cin.get();
     // cin.get();
-    return 0; 
+    system("pause");
+    return 0;
 }
