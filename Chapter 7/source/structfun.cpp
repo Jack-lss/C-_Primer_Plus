@@ -5,13 +5,13 @@
 // structure declarations
 struct polar
 {
-    double distance;      // distance from origin
-    double angle;         // direction from origin
+    double distance; // distance from origin
+    double angle;    // direction from origin
 };
 struct rect
 {
-    double x;             // horizontal distance from origin
-    double y;             // vertical distance from origin
+    double x; // horizontal distance from origin
+    double y; // vertical distance from origin
 };
 
 // prototypes
@@ -25,13 +25,14 @@ int main()
     polar pplace;
 
     cout << "Enter the x and y values: ";
-    while (cin >> rplace.x >> rplace.y)  // slick use of cin
+    while (cin >> rplace.x >> rplace.y) // slick use of cin
     {
         pplace = rect_to_polar(rplace);
         show_polar(pplace);
         cout << "Next two numbers (q to quit): ";
     }
     cout << "Done.\n";
+    system("pause");
     return 0;
 }
 
@@ -42,13 +43,13 @@ polar rect_to_polar(rect xypos)
     polar answer;
 
     answer.distance =
-        sqrt( xypos.x * xypos.x + xypos.y * xypos.y);
+        sqrt(xypos.x * xypos.x + xypos.y * xypos.y);
     answer.angle = atan2(xypos.y, xypos.x);
-    return answer;      // returns a polar structure
+    return answer; // returns a polar structure
 }
 
 // show polar coordinates, converting angle to degrees
-void show_polar (polar dapos)
+void show_polar(polar dapos)
 {
     using namespace std;
     const double Rad_to_deg = 57.29577951;

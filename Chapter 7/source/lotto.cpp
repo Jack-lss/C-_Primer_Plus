@@ -11,13 +11,14 @@ int main()
     while ((cin >> total >> choices) && choices <= total)
     {
         cout << "You have one chance in ";
-        cout << probability(total, choices);      // compute the odds
+        cout << probability(total, choices); // compute the odds
         cout << " of winning.\n";
         cout << "Next two numbers (q to quit): ";
     }
     cout << "bye\n";
     // cin.get();
     // cin.get();
+    system("pause");
     return 0;
 }
 
@@ -25,11 +26,11 @@ int main()
 // numbers correctly from numbers choices
 long double probability(unsigned numbers, unsigned picks)
 {
-    long double result = 1.0;  // here come some local variables
+    long double result = 1.0; // here come some local variables
     long double n;
     unsigned p;
 
     for (n = numbers, p = picks; p > 0; n--, p--)
-        result = result * n / p ; 
+        result = result * n / p;
     return result;
 }

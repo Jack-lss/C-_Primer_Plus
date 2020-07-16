@@ -4,7 +4,7 @@ const int Max = 5;
 
 // function prototypes
 int fill_array(double ar[], int limit);
-void show_array(const double ar[], int n);  // don't change data
+void show_array(const double ar[], int n); // don't change data
 void revalue(double r, double ar[], int n);
 
 int main()
@@ -18,12 +18,12 @@ int main()
     {
         cout << "Enter revaluation factor: ";
         double factor;
-        while (!(cin >> factor))    // bad input
+        while (!(cin >> factor)) // bad input
         {
             cin.clear();
             while (cin.get() != '\n')
                 continue;
-           cout << "Bad input; Please enter a number: ";
+            cout << "Bad input; Please enter a number: ";
         }
         revalue(factor, properties, size);
         show_array(properties, size);
@@ -31,6 +31,7 @@ int main()
     cout << "Done.\n";
     // cin.get();
     // cin.get();
+    system("pause");
     return 0;
 }
 
@@ -43,15 +44,15 @@ int fill_array(double ar[], int limit)
     {
         cout << "Enter value #" << (i + 1) << ": ";
         cin >> temp;
-        if (!cin)    // bad input
+        if (!cin) // bad input
         {
             cin.clear();
             while (cin.get() != '\n')
                 continue;
-           cout << "Bad input; input process terminated.\n";
-           break;
+            cout << "Bad input; input process terminated.\n";
+            break;
         }
-        else if (temp < 0)     // signal to terminate
+        else if (temp < 0) // signal to terminate
             break;
         ar[i] = temp;
     }

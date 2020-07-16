@@ -20,6 +20,7 @@ int main()
     estimate(code, pam);
     // cin.get();
     // cin.get();
+    system("pause");
     return 0;
 }
 
@@ -37,5 +38,5 @@ void estimate(int lines, double (*pf)(int))
 {
     using namespace std;
     cout << lines << " lines will take ";
-    cout << (*pf)(lines) << " hour(s)\n";
+    cout << pf(lines) << " hour(s)\n";
 }
