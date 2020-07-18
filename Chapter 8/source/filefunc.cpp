@@ -4,12 +4,12 @@
 #include <cstdlib>
 using namespace std;
 
-void file_it(ostream & os, double fo, const double fe[],int n);
+void file_it(ostream &os, double fo, const double fe[], int n);
 const int LIMIT = 5;
 int main()
 {
     ofstream fout;
-    const char * fn = "ep-data.txt";
+    const char *fn = "ep-data.txt";
     fout.open(fn);
     if (!fout.is_open())
     {
@@ -33,10 +33,11 @@ int main()
     cout << "Done\n";
     // cin.get();
     // cin.get();
+    system("pause");
     return 0;
 }
 
-void file_it(ostream & os, double fo, const double fe[],int n)
+void file_it(ostream &os, double fo, const double fe[], int n)
 {
     // save initial formatting state
     ios_base::fmtflags initial;
@@ -53,7 +54,7 @@ void file_it(ostream & os, double fo, const double fe[],int n)
         os.width(12);
         os << fe[i];
         os.width(15);
-        os << int (fo/fe[i] + 0.5) << endl;
+        os << int(fo / fe[i] + 0.5) << endl;
     }
     // restore initial formatting state
     os.setf(initial, ios_base::floatfield);

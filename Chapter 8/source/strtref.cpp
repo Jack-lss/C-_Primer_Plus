@@ -8,20 +8,19 @@ struct sysop
     int used;
 };
 
-const sysop & use(sysop & sysopref);  // function with a reference return type
+const sysop &use(sysop &sysopref); // function with a reference return type
 
 int main()
 {
-// NOTE: some implementations require using the keyword static
-// in the two structure declarations to enable initialization
+    // NOTE: some implementations require using the keyword static
+    // in the two structure declarations to enable initialization
     sysop looper =
-    {
-        "Rick \"Fortran\" Looper",
-        "I'm a goto kind of guy.",
-        0
-    };
+        {
+            "Rick \"Fortran\" Looper",
+            "I'm a goto kind of guy.",
+            0};
 
-    use(looper);            // looper is type sysop
+    use(looper); // looper is type sysop
     cout << "Looper: " << looper.used << " use(s)\n";
     sysop copycat;
     copycat = use(looper);
@@ -29,14 +28,15 @@ int main()
     cout << "Copycat: " << copycat.used << " use(s)\n";
     cout << "use(looper): " << use(looper).used << " use(s)\n";
     // cin.get();
+    system("pause");
     return 0;
 }
 
 // use() returns the reference passed to it
-const sysop & use(sysop & sysopref)
+const sysop &use(sysop &sysopref)
 {
     cout << sysopref.name << " says:\n";
     cout << sysopref.quote << endl;
     sysopref.used++;
-    return sysopref; 
+    return sysopref;
 }

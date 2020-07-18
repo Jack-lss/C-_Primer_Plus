@@ -2,7 +2,7 @@
 #include <iostream>
 double cube(double a);
 double refcube(double &ra);
-int main ()
+int main()
 {
     using namespace std;
     double x = 3.0;
@@ -12,6 +12,7 @@ int main ()
     cout << refcube(x);
     cout << " = cube of " << x << endl;
     // cin.get();
+    system("pause");
     return 0;
 }
 
@@ -24,5 +25,5 @@ double cube(double a)
 double refcube(double &ra)
 {
     ra *= ra * ra;
-    return ra; 
+    return ra;
 }

@@ -10,8 +10,9 @@ struct job
     int floor;
 };
 
-// explicit specialization 
-template <> void Swap<job>(job &j1, job &j2);
+// explicit specialization
+template <>
+void Swap<job>(job &j1, job &j2);
 void Show(job &j);
 
 int main()
@@ -22,7 +23,7 @@ int main()
     int i = 10, j = 20;
     cout << "i, j = " << i << ", " << j << ".\n";
     cout << "Using compiler-generated int swapper:\n";
-    Swap(i,j);    // generates void Swap(int &, int &)
+    Swap(i, j); // generates void Swap(int &, int &)
     cout << "Now i, j = " << i << ", " << j << ".\n";
 
     job sue = {"Susan Yaffee", 73000.60, 7};
@@ -35,11 +36,12 @@ int main()
     Show(sue);
     Show(sidney);
     // cin.get();
+    system("pause");
     return 0;
 }
 
 template <typename T>
-void Swap(T &a, T &b)    // general version
+void Swap(T &a, T &b) // general version
 {
     T temp;
     temp = a;
@@ -49,7 +51,8 @@ void Swap(T &a, T &b)    // general version
 
 // swaps just the salary and floor fields of a job structure
 
-template <> void Swap<job>(job &j1, job &j2)  // specialization
+template <>
+void Swap<job>(job &j1, job &j2) // specialization
 {
     double t1;
     int t2;
