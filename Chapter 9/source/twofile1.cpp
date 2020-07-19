@@ -14,5 +14,6 @@ int main()
     cout << &harry << " = &harry\n";
     remote_access();
     // cin.get();
-    return 0; 
+    system("pause");
+    return 0;
 }
