@@ -16,25 +16,26 @@ int main()
     cout << "weeding time = ";
     weeding.Show();
     cout << endl;
- 
+
     cout << "waxing time = ";
     waxing.Show();
     cout << endl;
-    
+
     cout << "total work time = ";
-    total = weeding + waxing;   // use operator+()
+    total = weeding + waxing; // use operator+()
     total.Show();
     cout << endl;
 
-    diff = weeding - waxing;    // use operator-()
+    diff = weeding - waxing; // use operator-()
     cout << "weeding time - waxing time = ";
     diff.Show();
     cout << endl;
 
-    adjusted = total * 1.5;      // use operator+()
+    adjusted = total * 1.5; // use operator+()
     cout << "adjusted work time = ";
     adjusted.Show();
     cout << endl;
-    // std::cin.get();    
+    // std::cin.get();
+    system("pause");
     return 0;
 }

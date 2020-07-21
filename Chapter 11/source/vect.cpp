@@ -1,12 +1,12 @@
 // vect.cpp -- methods for the Vector class
 #include <cmath>
-#include "vect.h"   // includes <iostream>
-using std::sqrt;
-using std::sin;
-using std::cos;
+#include "vect.h" // includes <iostream>
 using std::atan;
 using std::atan2;
+using std::cos;
 using std::cout;
+using std::sin;
+using std::sqrt;
 
 namespace VECTOR
 {
@@ -42,7 +42,7 @@ namespace VECTOR
     }
 
     // public methods
-    Vector::Vector()             // default constructor
+    Vector::Vector() // default constructor
     {
         x = y = mag = ang = 0.0;
         mode = RECT;
@@ -54,80 +54,80 @@ namespace VECTOR
     {
         mode = form;
         if (form == RECT)
-         {
-             x = n1;
-             y = n2;
-             set_mag();
-             set_ang();
+        {
+            x = n1;
+            y = n2;
+            set_mag();
+            set_ang();
         }
         else if (form == POL)
         {
-             mag = n1;
-             ang = n2 / Rad_to_deg;
-             set_x();
-             set_y();
+            mag = n1;
+            ang = n2 / Rad_to_deg;
+            set_x();
+            set_y();
         }
         else
         {
-             cout << "Incorrect 3rd argument to Vector() -- ";
-             cout << "vector set to 0\n";
-             x = y = mag = ang = 0.0;
-             mode = RECT;
+            cout << "Incorrect 3rd argument to Vector() -- ";
+            cout << "vector set to 0\n";
+            x = y = mag = ang = 0.0;
+            mode = RECT;
         }
     }
 
     // reset vector from rectangular coordinates if form is
     // RECT (the default) or else from polar coordinates if
     // form is POL
-    void Vector:: reset(double n1, double n2, Mode form)
+    void Vector::reset(double n1, double n2, Mode form)
     {
         mode = form;
         if (form == RECT)
-         {
-             x = n1;
-             y = n2;
-             set_mag();
-             set_ang();
+        {
+            x = n1;
+            y = n2;
+            set_mag();
+            set_ang();
         }
         else if (form == POL)
         {
-             mag = n1;
-             ang = n2 / Rad_to_deg;
-             set_x();
-             set_y();
+            mag = n1;
+            ang = n2 / Rad_to_deg;
+            set_x();
+            set_y();
         }
         else
         {
-             cout << "Incorrect 3rd argument to Vector() -- ";
-             cout << "vector set to 0\n";
-             x = y = mag = ang = 0.0;
-             mode = RECT;
+            cout << "Incorrect 3rd argument to Vector() -- ";
+            cout << "vector set to 0\n";
+            x = y = mag = ang = 0.0;
+            mode = RECT;
         }
     }
 
-    Vector::~Vector()    // destructor
+    Vector::~Vector() // destructor
     {
     }
 
-    void Vector::polar_mode()    // set to polar mode
+    void Vector::polar_mode() // set to polar mode
     {
         mode = POL;
     }
 
-    void Vector::rect_mode()     // set to rectangular mode
+    void Vector::rect_mode() // set to rectangular mode
     {
         mode = RECT;
     }
 
     // operator overloading
     // add two Vectors
-    Vector Vector::operator+(const Vector & b) const
+    Vector Vector::operator+(const Vector &b) const
     {
         return Vector(x + b.x, y + b.y);
     }
 
     // subtract Vector b from a
-    Vector Vector::operator-(const Vector & b) const
+    Vector Vector::operator-(const Vector &b) const
     {
         return Vector(x - b.x, y - b.y);
     }
@@ -146,25 +146,25 @@ namespace VECTOR
 
     // friend methods
     // multiply n by Vector a
-    Vector operator*(double n, const Vector & a)
+    Vector operator*(double n, const Vector &a)
     {
         return a * n;
     }
 
     // display rectangular coordinates if mode is RECT,
     // else display polar coordinates if mode is POL
-    std::ostream & operator<<(std::ostream & os, const Vector & v)
+    std::ostream &operator<<(std::ostream &os, const Vector &v)
     {
         if (v.mode == Vector::RECT)
-             os << "(x,y) = (" << v.x << ", " << v.y << ")";
+            os << "(x,y) = (" << v.x << ", " << v.y << ")";
         else if (v.mode == Vector::POL)
         {
-             os << "(m,a) = (" << v.mag << ", "
-                 << v.ang * Rad_to_deg << ")";
+            os << "(m,a) = (" << v.mag << ", "
+               << v.ang * Rad_to_deg << ")";
         }
         else
-             os << "Vector object mode is invalid";
-        return os; 
+            os << "Vector object mode is invalid";
+        return os;
     }
 
-}  // end namespace VECTOR
+} // end namespace VECTOR

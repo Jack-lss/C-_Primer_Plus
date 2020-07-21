@@ -7,7 +7,7 @@ Time::Time()
     hours = minutes = 0;
 }
 
-Time::Time(int h, int m )
+Time::Time(int h, int m)
 {
     hours = h;
     minutes = m;
@@ -30,7 +30,7 @@ void Time::Reset(int h, int m)
     minutes = m;
 }
 
-Time Time::operator+(const Time & t) const
+Time Time::operator+(const Time &t) const
 {
     Time sum;
     sum.minutes = minutes + t.minutes;
@@ -39,7 +39,7 @@ Time Time::operator+(const Time & t) const
     return sum;
 }
 
-Time Time::operator-(const Time & t) const
+Time Time::operator-(const Time &t) const
 {
     Time diff;
     int tot1, tot2;

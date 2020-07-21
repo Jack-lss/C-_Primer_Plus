@@ -15,11 +15,11 @@ int main()
     cout << "planning time = ";
     planning.Show();
     cout << endl;
- 
+
     cout << "coding time = ";
     coding.Show();
     cout << endl;
-    
+
     cout << "fixing time = ";
     fixing.Show();
     cout << endl;
@@ -40,5 +40,6 @@ int main()
     total.Show();
     cout << endl;
     // std::cin.get();
+    system("pause");
     return 0;
 }
