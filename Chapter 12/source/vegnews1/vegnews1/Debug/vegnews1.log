@@ -1,0 +1,8 @@
+﻿  sayings1.cpp
+  string1.cpp
+E:\Promotev\Original-C++PrimerPlus Source\Chapter 12\vegnews1\vegnews1\string1.cpp(22,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\Promotev\Original-C++PrimerPlus Source\Chapter 12\vegnews1\vegnews1\string1.cpp(39,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\Promotev\Original-C++PrimerPlus Source\Chapter 12\vegnews1\vegnews1\string1.cpp(58,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\Promotev\Original-C++PrimerPlus Source\Chapter 12\vegnews1\vegnews1\string1.cpp(68,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  正在生成代码...
+  vegnews1.vcxproj -> E:\Promotev\Original-C++PrimerPlus Source\Chapter 12\vegnews1\Debug\vegnews1.exe

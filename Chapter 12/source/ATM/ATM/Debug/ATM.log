@@ -1,0 +1,5 @@
+﻿  bank.cpp
+E:\Promotev\Original-C++PrimerPlus Source\Chapter 12\ATM\ATM\bank.cpp(18,25): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  queue.cpp
+  正在生成代码...
+  ATM.vcxproj -> E:\Promotev\Original-C++PrimerPlus Source\Chapter 12\ATM\Debug\ATM.exe
