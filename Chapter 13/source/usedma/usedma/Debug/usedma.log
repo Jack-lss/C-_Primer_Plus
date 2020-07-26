@@ -1,0 +1,13 @@
+﻿  dma.cpp
+E:\Promotev\Original-C++PrimerPlus Source\Chapter 13\usedma\usedma\dma.cpp(10,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\Promotev\Original-C++PrimerPlus Source\Chapter 13\usedma\usedma\dma.cpp(17,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\Promotev\Original-C++PrimerPlus Source\Chapter 13\usedma\usedma\dma.cpp(32,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\Promotev\Original-C++PrimerPlus Source\Chapter 13\usedma\usedma\dma.cpp(48,10): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\Promotev\Original-C++PrimerPlus Source\Chapter 13\usedma\usedma\dma.cpp(55,10): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\Promotev\Original-C++PrimerPlus Source\Chapter 13\usedma\usedma\dma.cpp(71,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\Promotev\Original-C++PrimerPlus Source\Chapter 13\usedma\usedma\dma.cpp(78,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\Promotev\Original-C++PrimerPlus Source\Chapter 13\usedma\usedma\dma.cpp(85,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\Promotev\Original-C++PrimerPlus Source\Chapter 13\usedma\usedma\dma.cpp(100,10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  usedma.cpp
+  正在生成代码...
+  usedma.vcxproj -> E:\Promotev\Original-C++PrimerPlus Source\Chapter 13\usedma\Debug\usedma.exe
