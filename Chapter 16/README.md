@@ -64,11 +64,10 @@
       ```
 
       2. length()成员来自较早版本的string类，而size()则是为提供STL兼容性而添加的。
+      3. 在字符串中搜索给行字符串或字符：
 
-3. 在字符串中搜索给行字符串或字符：
-
-      |方法原型|描述|
-      |:----:|:----:|
+      |                           方法原型                           |                             描述                             |
+      | :----------------------------------------------------------: | :----------------------------------------------------------: |
       | size_type find(const string & str, size_type pos = 0) const  | 从pos位置开始，查找子字符串str。如果找到，则返回该字符串首次出现时首字符的索引；否则，返回string::npos（string::npos是字符串可储存的最大字符数） |
       |   size_type find(const char \* s, size_type pos = 0) const   | 从pos位置开始，查找子字符串s。如果找到，则返回该字符串首次出现时首字符的索引；否则，返回string::npos |
       | size_type find(const char \* s, sizetype pos = 0, size_type n) | 从pos位置开始，查找s的前n个字符组成的子字符串，如果找到，则返回该字符串首次出现时首字符的索引;否则，返回string::npos |
@@ -77,10 +76,10 @@
       string库还提供了相关的方法：rfind()、find_first_of()、find_last_of()、find_first_not_of()和find_last_not_of()，它们的重载函数特征标都与find()相同。
 
       - rfind()方法查找子字符串或字符最后一次出现的位置；
-        - find_first_of()方法在字符串中查找参数中任何一个字符首次出现的位置；
-        - find_last_of()方法在字符串中查找参数中任何一个字符最后一次出现的位置；
-        - find_first_not_of()方法在字符串中查找第一个不包含在参数中的字符；
-        - find_last_not_of()方法在字符串中查找最后一个不包含在参数中的字符。
+        1. find_first_of()方法在字符串中查找参数中任何一个字符首次出现的位置；
+        2. find_last_of()方法在字符串中查找参数中任何一个字符最后一次出现的位置；
+        3. find_first_not_of()方法在字符串中查找第一个不包含在参数中的字符；
+        4. find_last_not_of()方法在字符串中查找最后一个不包含在参数中的字符。
 
 - 智能指针模板类
 
