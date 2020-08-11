@@ -11,7 +11,7 @@ int main()
     int ar[LIM] = {4, 5, 4, 2, 2, 3, 4, 8, 1, 4};
     list<int> la(ar, ar + LIM);
     list<int> lb(la);
-    
+
     cout << "Original list contents:\n\t";
     for_each(la.begin(), la.end(), Show);
     cout << endl;
@@ -31,7 +31,8 @@ int main()
     cout << "lb:\t";
     for_each(lb.begin(), lb.end(), Show);
     cout << endl;
-    // cin.get();    
+    // cin.get();
+    system("pause");
     return 0;
 }
 

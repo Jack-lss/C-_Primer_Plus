@@ -7,7 +7,7 @@ int main()
 {
     using namespace std;
     string letters;
-    
+
     cout << "Enter the letter grouping (quit to quit): ";
     while (cin >> letters && letters != "quit")
     {
@@ -21,5 +21,6 @@ int main()
     cout << "Done.\n";
     // cin.get();
     // cin.get();
+    system("pause");
     return 0;
 }

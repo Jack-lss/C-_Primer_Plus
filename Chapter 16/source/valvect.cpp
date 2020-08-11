@@ -34,6 +34,6 @@ int main()
     cout << "done\n";
     // cin.get();
     // cin.get();
-
+    system("pause");
     return 0;
 }

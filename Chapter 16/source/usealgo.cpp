@@ -10,8 +10,8 @@
 using namespace std;
 
 char toLower(char ch) { return tolower(ch); }
-string & ToLower(string & st);
-void display(const string & s);
+string &ToLower(string &st);
+void display(const string &s);
 
 int main()
 {
@@ -28,8 +28,8 @@ int main()
     // place words in set, converting to lowercase
     set<string> wordset;
     transform(words.begin(), words.end(),
-        insert_iterator<set<string> > (wordset, wordset.begin()),
-        ToLower);
+              insert_iterator<set<string>>(wordset, wordset.begin()),
+              ToLower);
     cout << "\nAlphabetic list of words:\n";
     for_each(wordset.begin(), wordset.end(), display);
     cout << endl;
@@ -46,16 +46,17 @@ int main()
         cout << *si << ": " << wordmap[*si] << endl;
     // cin.get();
     // cin.get();
+    system("pause");
     return 0;
 }
 
-string & ToLower(string & st)
+string &ToLower(string &st)
 {
     transform(st.begin(), st.end(), st.begin(), toLower);
-    return st; 
+    return st;
 }
 
-void display(const string & s)
+void display(const string &s)
 {
     cout << s << " ";
 }

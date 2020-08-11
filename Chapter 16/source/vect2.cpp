@@ -3,12 +3,13 @@
 #include <string>
 #include <vector>
 
-struct Review {
+struct Review
+{
     std::string title;
     int rating;
 };
-bool FillReview(Review & rr);
-void ShowReview(const Review & rr);
+bool FillReview(Review &rr);
+void ShowReview(const Review &rr);
 
 int main()
 {
@@ -22,15 +23,15 @@ int main()
     if (num > 0)
     {
         cout << "Thank you. You entered the following:\n"
-            << "Rating\tBook\n";
+             << "Rating\tBook\n";
         for (int i = 0; i < num; i++)
             ShowReview(books[i]);
         cout << "Reprising:\n"
-            << "Rating\tBook\n";
+             << "Rating\tBook\n";
         vector<Review>::iterator pr;
         for (pr = books.begin(); pr != books.end(); pr++)
             ShowReview(*pr);
-        vector <Review> oldlist(books);     // copy constructor used
+        vector<Review> oldlist(books); // copy constructor used
         if (num > 3)
         {
             // remove 2 items
@@ -40,7 +41,7 @@ int main()
                 ShowReview(*pr);
             // insert 1 item
             books.insert(books.begin(), oldlist.begin() + 1,
-                        oldlist.begin() + 2);
+                         oldlist.begin() + 2);
             cout << "After insertion:\n";
             for (pr = books.begin(); pr != books.end(); pr++)
                 ShowReview(*pr);
@@ -53,13 +54,14 @@ int main()
     else
         cout << "Nothing entered, nothing gained.\n";
     // std::cin.get();
-	return 0;
+    system("pause");
+    return 0;
 }
 
-bool FillReview(Review & rr)
+bool FillReview(Review &rr)
 {
     std::cout << "Enter book title (quit to quit): ";
-    std::getline(std::cin,rr.title);
+    std::getline(std::cin, rr.title);
     if (rr.title == "quit")
         return false;
     std::cout << "Enter book rating: ";
@@ -72,7 +74,7 @@ bool FillReview(Review & rr)
     return true;
 }
 
-void ShowReview(const Review & rr)
+void ShowReview(const Review &rr)
 {
-    std::cout << rr.rating << "\t" << rr.title << std::endl; 
+    std::cout << rr.rating << "\t" << rr.title << std::endl;
 }

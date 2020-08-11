@@ -5,7 +5,7 @@
 #include <vector>
 #include <algorithm>
 
-void output(const std::string & s) {std::cout << s << " ";}
+void output(const std::string &s) { std::cout << s << " "; }
 
 int main()
 {
@@ -17,16 +17,17 @@ int main()
     copy(s1, s1 + 4, words.begin());
     for_each(words.begin(), words.end(), output);
     cout << endl;
- 
-// construct anonymous back_insert_iterator object
-    copy(s2, s2 + 2, back_insert_iterator<vector<string> >(words));
+
+    // construct anonymous back_insert_iterator object
+    copy(s2, s2 + 2, back_insert_iterator<vector<string>>(words));
     for_each(words.begin(), words.end(), output);
     cout << endl;
 
-// construct anonymous insert_iterator object
-    copy(s3, s3 + 2, insert_iterator<vector<string> >(words, words.begin()));
+    // construct anonymous insert_iterator object
+    copy(s3, s3 + 2, insert_iterator<vector<string>>(words, words.begin()));
     for_each(words.begin(), words.end(), output);
     cout << endl;
     // cin.get();
-    return 0; 
+    system("pause");
+    return 0;
 }

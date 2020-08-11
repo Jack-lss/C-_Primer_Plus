@@ -37,11 +37,12 @@ int main()
     for_each(prod.begin(), prod.end(), Show);
     cout << endl;
     // cin.get();
-    return 0; 
+    system("pause");
+    return 0;
 }
 
 void Show(double v)
 {
     std::cout.width(6);
-    std::cout << v << ' '; 
+    std::cout << v << ' ';
 }
